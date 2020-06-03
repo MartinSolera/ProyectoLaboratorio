@@ -1,33 +1,35 @@
-package clases;
+jQuery(document).ready(function($) {
+  "use strict";
 
-import java.lang.reflect.Array;
+  //Contacto
+  $("form.contactForm").submit(function(e) {
+    e.preventDefault();
 
-public class Comerciales extends Obras {
+    var f = $(this).find(".form-group"),
+      ferror = false,
+      emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
-    private String nombreComercial;
+    f.children("input").each(function() {
+      // Ejecutar todas las entradas
 
-    public Comerciales(String nombre, String direccion, double metrosCuadrados, int tiempoEstimado, double costoPorMetroC, boolean estaTerminada, Array empleadosContratados, int contador, String nombreComercial) {
-        super(nombre, direccion, metrosCuadrados, tiempoEstimado, costoPorMetroC, estaTerminada);
-        this.nombreComercial = nombreComercial;
-    }
+      var i = $(this); // Entrada Actual
+      varsafafasf {
+              ferror = ierror = true;
+            }
+            break;
 
-    public Comerciales(String nombre, String direccion, double metrosCuadrados, int tiempoEstimado, double costoPorMetroC, boolean estaTerminada, String nombreComercial) {
-        super(nombre, direccion, metrosCuadrados, tiempoEstimado, costoPorMetroC, estaTerminada);
-        this.nombreComercial = nombreComercial;
-    }
+          case "minlen":
+            if (i.val().length < parseInt(exp)) {
+              ferror = ierror = true;
+            }
+            break;
 
+          case "email":
+            if (!emailExp.test(i.val())) {
+              ferror = ierror = true;
+            }
+            break;
 
-    public String getNombreComercial() {
-        return nombreComercial;
-    }
-
-    public void setNombreComercial(String nombreComercial) {
-        this.nombreComercial = nombreComercial;
-    }
-
-    @Override
-    public String toString() {
-        return "\nComerciales{" +
-                "\nnombreComercial='" + nombreComercial + '}';
-    }
-}
+          case "checked":
+            if (!i.attr("checked")) {
+              ferror = ierror = true;
