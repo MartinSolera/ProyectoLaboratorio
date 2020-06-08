@@ -20,12 +20,11 @@ public abstract class TipoAvion {
 
     @Override
     public String toString() {
-        return "TipoAvion " +
-                "capConbustible: " + capConbustible +
-                "costoXkm: " + costoXkm +
-                "sizePasajeros: " + sizePasajeros +
-                "velMaxima: " + velMaxima +
-                "motor: " + motor;
+        return " Capacidad conbustible: " + capConbustible +
+                "| Costo por KM: " + costoXkm +
+                "| Cantidad maxima Pasajeros: " + sizePasajeros +
+                "| Velocidad Maxima: " + velMaxima +
+                "| Tipo de motor: " + motor;
     }
 
     public float getCapConbustible() {

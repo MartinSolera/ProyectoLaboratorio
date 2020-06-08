@@ -17,7 +17,7 @@ public class Usuario {
 
     Scanner reader = new Scanner(System.in);
 
-    /// SE LE PIDE AL USUARIO QUE INGRESE LOS VALORES PARA CREAR EL USUARIO | DEJE QUE MUESTRE LOS VALORES QUE INGRESA PARA PODER VER SI ESTAN CORRECTOS
+    /// SE LE PIDE AL USUARIO QUE INGRESE LOS VALORES PARA CREAR EL USUARIO | DEJÉ QUE MUESTRE LOS VALORES QUE INGRESA PARA PODER VER SI ESTAN CORRECTOS
 
     /// VALIDACIONES: en caso de que no se cumplan las validaciones se le asigna un 0 a la variable verificacion para que no salga del bucle.
 
