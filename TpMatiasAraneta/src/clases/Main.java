@@ -6,7 +6,8 @@ public class Main {
 	public static void main(String[] args) {
 	
 		//Arquitecto
-		
+        System.out.println("probando");
+
 		Arquitecto Sergio = new Arquitecto("Sergio", "Arquitecto", 20129678, 1295473, 1000);
 		Arquitecto Osvaldo = new Arquitecto("Osvaldo", "Arquitecto", 23457893, 1285136, 1000);
 		//Arquitecto Maria = new Arquitecto("Maria", "Arquitecta", 26796344, 1296453, 1500);

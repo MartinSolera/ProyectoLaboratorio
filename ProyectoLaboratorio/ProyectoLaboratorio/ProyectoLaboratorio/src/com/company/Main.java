@@ -9,6 +9,9 @@ public class Main {
     public static void main(String[] args) {
 
         /// CREANDO EMPRESA
+
+        System.out.println("PROBANDO");
+
         Empresa empresa = new Empresa("Aerotaxi Club"); /// CREACION DE EMPRESA
         Scanner scanner = new Scanner(System.in);
 
