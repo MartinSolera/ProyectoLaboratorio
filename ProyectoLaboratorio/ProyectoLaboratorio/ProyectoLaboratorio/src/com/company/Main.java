@@ -12,12 +12,6 @@ public class Main {
         Empresa empresa = new Empresa("Aerotaxi Club"); /// CREACION DE EMPRESA
         Scanner scanner = new Scanner(System.in);
 
-
-        ///CREANDO RESERVA
-        Reserva reserva = new Reserva(0,null,null, 0,0,0);
-
-
-
         ///CREANDO AVIONES
         ///--------------Bronce
         Bronze bronze1 = new Bronze(1000,150,3,400,Motor.reaccion);
@@ -26,9 +20,9 @@ public class Main {
         Silver silver1 = new Silver(1250,200,5,500,Motor.helice);
         Silver silver2 = new Silver(1250,200,5,500,Motor.helice);
         ///--------------Gold
-        /// Aca hay dos tipos por que uno va a ser mas premium (tipo de interfaz).
+        /// Aca hay dos tipos por que uno va a aser mas premium (tipo de interfaz).
         Gold gold1 = new Gold(1500,300,8,750,Motor.pistones);
-        Gold gold2 = new Gold(1500,350,8,800,Motor.pistones);
+        Gold gold2 = new Gold(1500,350,8,800,Motor.helice);
         ///-------------------------------------------------------------------------------------------------------------
         ///AGREGANDO AVIONES A EL ARREGLO
         empresa.agregarAvion(bronze1);
@@ -38,13 +32,12 @@ public class Main {
         empresa.agregarAvion(gold1);
         empresa.agregarAvion(gold2);
 
-        //empresa.mostrarArregloAviones();
+        empresa.mostrarArregloAviones();
 
 
         /// CREANDO MENU INTERACTIVO
         int opcion=0;
         int opcion2=0;
-        int opcion3=0;
         boolean salir = false;
 
         while(!salir){
@@ -72,7 +65,7 @@ public class Main {
                     case 2:
                         while(!salir){
                             System.out.println("1 | OPCION");
-                            System.out.println("2 | Seleccionar Origen");
+                            System.out.println("2 | OPCION");
                             System.out.println("3 | OPCION");
                             System.out.println("4 | OPCION");
                             System.out.println("5 | OPCION");
@@ -82,24 +75,12 @@ public class Main {
                         opcion2 = scanner.nextInt();
 
                         switch (opcion2){
-
                             case 1:
                                 System.out.println("ESTE ES EL SUBMENU PARTE 1");
                                 break;
 
                             case 2:
-                                reserva.mostrarLugares();
-
-                                int origen = reserva.selecOrigen();
-                                int destino = reserva.selecDestino();
-
-                                if(origen == destino){
-                                    System.out.println("El destino y el origen no pueden ser iguales");
-                                }
-
-                                System.out.println("Usted quiere salir desde : " + origen + "hacia :" + destino);
-
-
+                                System.out.println("ESTE ES EL SUBMENU PARTE 2");
                                 break;
 
                             case 3:

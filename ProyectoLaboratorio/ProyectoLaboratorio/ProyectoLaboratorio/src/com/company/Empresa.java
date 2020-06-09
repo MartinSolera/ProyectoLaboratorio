@@ -9,7 +9,6 @@ public class Empresa {
     private HashMap<Integer, Usuario> mapUsuarios;
     private ArrayList<TipoAvion> listaAviones;
 
-
     public Empresa(String nombre){
         this.nombre = nombre;
         this.mapUsuarios = new HashMap<Integer,Usuario>();
